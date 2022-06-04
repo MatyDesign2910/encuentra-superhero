@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Encuentra tu SuperHero</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h5 class="text-white h4">Collapsed content</h5>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark px-4">
+        <img src="img/sh2.jpg" width="50px" alt="" style="margin-right: auto;" />
+        <!-- <button
+                  class="navbar-toggler ml-auto"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarToggleExternalContent"
+                  aria-controls="navbarToggleExternalContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  style="float: right;"
+                >
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <!-- En caso de usar navbar-->
+      </nav>
+    </header>
+    <section id="buscador" class="container">
+      <div class="row">
+        <div class="col-md-6 col-xs-12 my-4 mx-auto">
+          <div class="text-center">
+            <img src="img/sh1.jpg" width="80%" alt="" />
+            <h3 class="text-left mt-3" style="text-align: left">
+              Encuentra tu SuperHero
+            </h3>
+            <div class="col-auto mx-auto" style="text-align: left">
+              <label for="staticEmail2"
+                >Ingresa el número del SuperHero a buscar</label
+              >
+              <div class="mx-auto">
+                <input type="number" class="form-control mt-2" id="numero" placeholder="Ingrese un número desde el 1 al 731" />
+                <button
+                  type="button"
+                  id="enviar"
+                  class="btn btn-primary mb-3 mt-2"
+                >
+                  Buscar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="info" class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-xs-12 my-4">
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img id="imagen" class="img-fluid rounded-start" alt="..." />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Nombre: <span id="title"></span></h5>
+                        <p class="card-text">
+                          Conexiones: <span id="grupos"></span>
+                        </p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Publicado por: <span id="por"></span></li>
+                            <li class="list-group-item">Ocupación: <span id="ocupacion"></span></li>
+                            <li class="list-group-item">Primera aparición: <span id="aparicion"></span></li>
+                            <li class="list-group-item">Altura: <span id="altura"></span></li>
+                            <li class="list-group-item">Peso: <span id="peso"></span></li>
+                            <li class="list-group-item">Alianzas: <span id="alianzas"></span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 my-4">
+                <div id="chartContainer" style="height: 500px; width: 100%;"></div>
+            </div>
+        </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </body>
+</html>
